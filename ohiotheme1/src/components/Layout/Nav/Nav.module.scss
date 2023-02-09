@@ -70,15 +70,15 @@ nav {
           }
 
           .lvl2_ul {
-            visibility: visible;
             opacity: 1;
+            visibility: visible;
             transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
             transform: perspective(400px) rotateX(0deg);
           }
 
           .onelisted {
-            visibility: visible;
             opacity: 1;
+            visibility: visible;
             transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
             transform: perspective(400px) rotateX(0deg);
           }
@@ -110,10 +110,10 @@ nav {
           top: 2.75rem;
           left: -525px;
           display: flex;
-          flex-wrap: wrap;
+          flex-wrap: block;
           z-index: 100;
-          visibility: hidden;
           opacity: 0;
+          visibility: hidden;
           padding: 1.75rem 1rem;
           width: calc(100vw - 8.8vh);
           // width: 1470px;
