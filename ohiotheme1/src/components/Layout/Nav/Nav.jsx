@@ -7,8 +7,8 @@ const Nav = () => {
   return (
     <nav>
       <div className="container-fluid h-100">
-        <div className="row h-100">
-          <div className="col-3">
+        <div className="row justify-content-between h-100">
+          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
             <div className={NavStyle.left_nav}>
               <div
                 className={`${NavStyle.menu_button} btn btn-primary`}
@@ -25,7 +25,7 @@ const Nav = () => {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className={`col-xl-6 col-lg-6 ${NavStyle.mid_nav_none}`}>
             <div className={NavStyle.mid_nav}>
               <ul className={NavStyle.lvl1_ul}>
                 <li className={NavStyle.lvl1_li}>
@@ -843,7 +843,7 @@ const Nav = () => {
               </ul>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
             <div className={NavStyle.right_nav}>
               <button>Let's talk</button>
             </div>
