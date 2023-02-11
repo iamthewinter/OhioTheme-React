@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../../assets/YbUt6che-OhioLogo.svg";
 import NavStyle from "../Nav/Nav.module.scss";
 import { Icon } from "@iconify/react";
 
 const Nav = () => {
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 400) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
   return (
-    <nav>
+    <nav
+      className={
+        color
+          ? `${NavStyle.transparent_nav} ${NavStyle.nav_scroll}`
+          : `${NavStyle.transparent_nav}`
+      }
+    >
       <div className="container-fluid h-100">
         <div className="row justify-content-between h-100">
           <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">

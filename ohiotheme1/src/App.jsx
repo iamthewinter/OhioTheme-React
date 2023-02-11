@@ -29,6 +29,16 @@ function App() {
       y: mousePosition.y - 16,
     },
   };
+
+  const [opacity, setOpacity] = useState(false);
+  const changeOpacity = () => {
+    if (window.scrollY >= 460) {
+      setOpacity(true);
+    } else {
+      setOpacity(false);
+    }
+  };
+  window.addEventListener("scroll", changeOpacity);
   return (
     <main className={AppStyle.main_scss}>
       <Home />
@@ -41,7 +51,14 @@ function App() {
       </motion.div>
       <ul className={AppStyle.fixed_left_tools}>
         <li>
-          <a href="#" className={AppStyle.scroll_top}>
+          <a
+            href="#"
+            className={
+              opacity
+                ? `${AppStyle.scroll_top} ${AppStyle.scroll_top_appear}`
+                : `${AppStyle.scroll_top}`
+            }
+          >
             <div className={AppStyle.scroll_top_bar}>
               <div className={AppStyle.scroll_track}></div>
             </div>
