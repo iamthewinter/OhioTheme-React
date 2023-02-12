@@ -43,8 +43,12 @@ section {
       .first_big_txts {
         height: 60%;
         font-family: "DM Sans", sans-serif;
+        @media (max-width: 1180px) {
+          margin-bottom: 50px;
+        }
         @media (max-width: 768px) {
           height: 100%;
+          margin-bottom: 15px;
         }
         p {
           font-size: 1.05em;
