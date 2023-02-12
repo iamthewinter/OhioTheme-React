@@ -1,7 +1,12 @@
 import React from "react";
+import Collage from "./ClassicCollage/Collage";
 
 const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return (
+    <>
+      <Collage />
+    </>
+  );
 };
 
 export default Portfolio;
