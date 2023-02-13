@@ -1,0 +1,47 @@
+.accordion {
+  .accordion-item {
+    border: none;
+
+    .accordion-header {
+      border: none;
+
+      button {
+        padding: 10px 0px;
+        font-family: "DM Sans", sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.35;
+        color: #111013;
+        font-weight: 700;
+        font-size: 16.4px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          display: flex;
+          align-items: center;
+          svg {
+            font-size: 17px;
+            color: black;
+          }
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .accordion-button {
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        color: black;
+        box-shadow: none;
+      }
+    }
+    .accordion-collapse {
+      .accordion-body {
+        padding: 1rem 0;
+      }
+    }
+  }
+}

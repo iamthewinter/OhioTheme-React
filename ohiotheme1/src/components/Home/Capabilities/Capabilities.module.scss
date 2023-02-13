@@ -1,0 +1,275 @@
+.fourth_section {
+  background-color: rgba(150, 144, 162, 0.06);
+  padding: 50px 0;
+
+  .col_holder {
+    @media (max-width: 1200px) {
+      margin-bottom: 30px;
+    }
+    h6 {
+      font-size: 0.9em;
+      font-weight: 500;
+      margin-bottom: 17px;
+    }
+
+    h2 {
+      padding: 18.2px 0 0 0;
+      font-family: "DM Sans", sans-serif;
+      font-size: 3.25rem;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      color: #111013;
+      font-weight: 700;
+      margin: 0;
+      border-top: 1px solid rgba(99, 93, 111, 0.65);
+    }
+  }
+
+  .background_white {
+    background-color: white;
+
+    .back_img_col {
+      float: left;
+      position: relative;
+      min-height: 1px;
+
+      .column_inner {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: relative;
+        min-height: 1px;
+        width: 100%;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &::before {
+          content: "";
+          display: table;
+        }
+
+        &::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .stretch_content {
+          height: 100%;
+          display: flex;
+          position: relative;
+          left: -129.6px;
+          min-width: 847.925px;
+          flex-direction: column;
+
+          @media (max-width: 1400px) {
+            left: -149.6px;
+            min-width: 786.925px;
+          }
+
+          &::after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+          .empty_space_grey {
+            height: 10vh;
+            background-color: rgba(150, 144, 162, 0.06);
+            @media (max-width: 1200px) {
+              height: 0;
+            }
+          }
+
+          .backgorund_image_holder {
+            -webkit-box-flex: 2;
+            flex-grow: 2;
+            min-height: 30vh;
+            margin-right: 0px;
+            margin-left: 0px;
+            background-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/oh__demo1__1.jpeg?id=223768);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            width: 100%;
+
+            &::before {
+              content: "";
+              display: table;
+            }
+
+            .column_container {
+              float: left;
+              padding: 0 0;
+              width: 100%;
+              position: relative;
+              min-height: 1px;
+
+              .col_inner {
+                padding: 0 1.25rem;
+                width: 100%;
+                position: relative;
+                min-height: 1px;
+
+                &::before {
+                  content: "";
+                  display: table;
+                }
+
+                .wp_wrapper {
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+
+                  &::after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                  }
+                }
+
+                &::after {
+                  clear: both;
+                  content: "";
+                  display: table;
+                }
+              }
+            }
+
+            &::after {
+              clear: both;
+              content: "";
+              display: table;
+            }
+          }
+        }
+      }
+    }
+
+    .empty_col {
+      float: left;
+      position: relative;
+      min-height: 1px;
+      background-color: white;
+      @media (max-width: 1200px) {
+        display: none;
+      }
+
+      .col_inn {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        padding: 0 1.25rem;
+        position: relative;
+        min-height: 1px;
+        width: 100%;
+
+        &::before {
+          content: " ";
+          display: table;
+        }
+
+        &::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .wp_wrapper {
+          &::after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+        }
+      }
+    }
+
+    .text_col {
+      float: left;
+      background-color: white;
+
+      .column_inne_right {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        padding: 0 1.25rem;
+        position: relative;
+        min-height: 1px;
+        width: 100%;
+
+        &::before {
+          content: " ";
+          display: table;
+        }
+
+        .col4_adapt {
+          .empty_space_grey {
+            height: 10vh;
+            background-color: transparent;
+          }
+
+          .player_line {
+            display: flex;
+            align-items: center;
+
+            .player {
+              background-color: black;
+              width: 56px;
+              height: 56px;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+
+              &:hover {
+                background-color: #d90a2c;
+              }
+
+              svg {
+                font-size: 30px;
+                color: white;
+              }
+            }
+          }
+
+          h3 {
+            margin: 20px 0;
+            font-family: "DM Sans", sans-serif;
+            font-size: 2.25rem;
+            letter-spacing: -0.035em;
+            line-height: 1.15;
+            color: #111013;
+            font-weight: 700;
+            @media (max-width: 1400px) {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .partners_logo {
+    padding: 0 62px 0 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    &:hover {
+      img {
+        transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+    }
+    img {
+      width: 130px;
+    }
+  }
+}

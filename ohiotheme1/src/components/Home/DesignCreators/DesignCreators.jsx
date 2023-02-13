@@ -7,7 +7,7 @@ const DesignCreators = () => {
     AOS.init();
   }, []);
   return (
-    <section>
+    <section className={DsgnCrtrs.first_section}>
       <div className={DsgnCrtrs.section_under}>
         <div className="container h-100">
           <div className="row h-100">
