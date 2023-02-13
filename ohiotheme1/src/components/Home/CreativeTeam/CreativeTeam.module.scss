@@ -21,6 +21,13 @@
       margin: 0;
       border-top: 2px solid rgba(99, 93, 111, 0.65);
       font-family: "DM Sans", sans-serif;
+      @media (max-width: 1400px) {
+        font-size: 45px;
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 38px;
+      }
     }
 
     h3 {

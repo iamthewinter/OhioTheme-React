@@ -79,7 +79,9 @@ const Capabilities = () => {
       </div>
       <div className="container mt-5 pt-2">
         <div className="row pt-4">
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-min.png"
@@ -87,7 +89,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-2-min.png"
@@ -95,7 +99,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-4-min.png"
@@ -103,7 +109,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-6-min.png"
@@ -111,7 +119,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-8-min.png"
@@ -119,7 +129,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-10-min.png"
@@ -127,7 +139,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-1-min.png"
@@ -135,7 +149,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-3-min.png"
@@ -143,7 +159,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-5-min.png"
@@ -151,7 +169,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-7-min.png"
@@ -159,7 +179,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-9-min.png"
@@ -167,7 +189,9 @@ const Capabilities = () => {
               />
             </div>
           </div>
-          <div className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6">
+          <div
+            className={`col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-6 ${CapableStyle.partner_logo_xs}`}
+          >
             <div className={CapableStyle.partners_logo}>
               <img
                 src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-stage-demo-1/LogoSC-11-min.png"
