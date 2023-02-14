@@ -39,6 +39,23 @@ function App() {
     }
   };
   window.addEventListener("scroll", changeOpacity);
+
+  const [scrollTop, setScrollTop] = useState(0);
+
+  const onScroll = () => {
+    const winScroll = document.documentElement.scrollTop;
+    const Height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    const scrolled = (winScroll / Height) * 100;
+    setScrollTop(scrolled);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <main className={AppStyle.main_scss}>
       <Home />
@@ -60,7 +77,10 @@ function App() {
             }
           >
             <div className={AppStyle.scroll_top_bar}>
-              <div className={AppStyle.scroll_track}></div>
+              <div
+                className={AppStyle.scroll_progress_track}
+                style={{ width: `${scrollTop}%` }}
+              ></div>
             </div>
             <div className={AppStyle.scrolltotop_title}>Scroll to top</div>
           </a>

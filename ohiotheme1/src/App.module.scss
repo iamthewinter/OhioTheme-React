@@ -61,17 +61,17 @@
             top: 0;
             height: 100%;
             width: 100%;
-            background-color: currentColor;
+            background-color: #0d6efd;
             opacity: 0.25;
           }
 
-          .scroll_track {
+          .scroll_progress_track {
             position: absolute;
             top: 0;
             right: 0;
             height: 100%;
             background-color: black;
-            width: 10%;
+            transition: 0.15s ease-in-out;
           }
         }
 

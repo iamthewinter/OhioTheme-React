@@ -1,0 +1,121 @@
+.seven_section {
+  background-color: #111013;
+  padding: 70px 0 50px 0;
+
+  .col6_holder {
+    @media (max-width: 576px) {
+      margin-bottom: 20px;
+    }
+    h6 {
+      color: #82838a;
+      font-size: 0.9em;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: white;
+      padding-top: 0.15em;
+      font-family: "DM Sans", sans-serif;
+      font-size: 3.25rem;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      font-weight: 700;
+      margin: 0;
+      @media (max-width: 1400px) {
+        font-size: 45px;
+      }
+      @media (max-width: 1400px) {
+        font-size: 39px;
+      }
+    }
+  }
+
+  .col6_right_holder {
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 576px) {
+      justify-content: flex-start;
+    }
+
+    button {
+      font-family: "DM Sans", sans-serif;
+      background-color: #d90a2c;
+      color: white;
+      padding: 0 18.4px;
+      font-size: 0.95em;
+      min-height: 3rem;
+      border: 2px solid transparent;
+      padding: 0 1.15rem;
+      font-weight: 700;
+      cursor: pointer;
+      line-height: 1.5rem;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+      border-radius: 0.35rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &:hover {
+        background-color: #161519;
+        animation: 0.4s cubic-bezier(0.58, 0.3, 0.005, 1) 0s 1 normal none
+          running links;
+
+        span {
+          .toright {
+            transform: translateX(100%);
+            // display: block;
+            opacity: 0;
+          }
+
+          .fromleft {
+            transform: translateX(0%);
+            // display: none;
+            opacity: 1;
+          }
+        }
+      }
+
+      span {
+        margin: 0 0 2px 5px;
+        display: flex;
+        position: relative;
+        svg {
+          font-size: 24px;
+        }
+
+        .toright {
+          // display: none;
+
+          opacity: 1;
+          transform: translateX(0);
+          transition: 0.1s ease-in-out;
+        }
+
+        .fromleft {
+          // display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transform: translateX(-100%);
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  hr {
+    margin: 25px 0 25px 0;
+    opacity: 1;
+    border-top: 1px solid rgba(99, 93, 111, 0.65);
+  }
+  .col6_holder {
+    p {
+      color: white;
+      font-size: 16.4px;
+    }
+  }
+}
