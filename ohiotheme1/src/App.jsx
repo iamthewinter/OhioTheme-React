@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Home from "./components/Home/Home";
 import AppStyle from "../src/App.module.scss";
 import { Icon } from "@iconify/react";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -58,7 +58,7 @@ function App() {
 
   return (
     <main className={AppStyle.main_scss}>
-      <Home />
+      <Contact />
       <motion.div
         className={AppStyle.cursor}
         variants={variants}
