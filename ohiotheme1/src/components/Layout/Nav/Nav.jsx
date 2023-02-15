@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../../assets/YbUt6che-OhioLogo.svg";
+import LogoWhite from "../../../assets/Lb11lpeY-OhioLogoInverse.svg";
 import NavStyle from "../Nav/Nav.module.scss";
 import { Icon } from "@iconify/react";
 
@@ -37,7 +37,7 @@ const Nav = () => {
                 </div>
               </div>
               <div className={NavStyle.logo}>
-                <img src={Logo} alt="" />
+                <img src={LogoWhite} alt="" />
               </div>
             </div>
           </div>
@@ -46,13 +46,11 @@ const Nav = () => {
               <ul className={NavStyle.lvl1_ul}>
                 <li className={NavStyle.lvl1_li}>
                   <div className={NavStyle.li_container}>
-                    <small>01</small>
                     <span>Home</span>
                   </div>
                 </li>
                 <li className={NavStyle.lvl1_li}>
                   <div className={NavStyle.li_container}>
-                    <small>02</small>
                     <span>Elements</span>
                   </div>
                   <ul className={NavStyle.lvl2_ul}>
@@ -231,7 +229,6 @@ const Nav = () => {
                 </li>
                 <li className={NavStyle.lvl1_li}>
                   <div className={NavStyle.li_container}>
-                    <small>03</small>
                     <span>Portfolio</span>
                   </div>
                   <ul className={`${NavStyle.lvl2_ul} ${NavStyle.left2}`}>
@@ -440,7 +437,6 @@ const Nav = () => {
                 </li>
                 <li className={NavStyle.lvl1_li}>
                   <div className={NavStyle.li_container}>
-                    <small>04</small>
                     <span>Blog</span>
                   </div>
                   <ul className={`${NavStyle.lvl2_ul} ${NavStyle.left3}`}>
@@ -623,7 +619,6 @@ const Nav = () => {
                 </li>
                 <li className={NavStyle.lvl1_li}>
                   <div className={NavStyle.li_container}>
-                    <small>05</small>
                     <span>Shop</span>
                   </div>
                   <ul className={`${NavStyle.lvl2_ul} ${NavStyle.left4}`}>
@@ -789,7 +784,6 @@ const Nav = () => {
                 </li>
                 <li className={NavStyle.lvl1_li}>
                   <div className={NavStyle.li_container}>
-                    <small>06</small>
                     <span>Pages</span>
                   </div>
                   <ul className={NavStyle.onelisted}>
@@ -841,7 +835,6 @@ const Nav = () => {
                 </li>
                 <li className={NavStyle.lvl1_li}>
                   <div className={NavStyle.li_container}>
-                    <small>07</small>
                     <span>Help</span>
                   </div>
                   <ul className={NavStyle.onelisted}>
