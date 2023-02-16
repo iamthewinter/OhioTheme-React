@@ -43,13 +43,30 @@
         .bar1 {
           width: 22px;
         }
+        .bar1_black {
+          background-color: black;
+        }
+        .bar2_black {
+          background-color: black;
+        }
       }
     }
 
     .logo {
       cursor: pointer;
       transition: 0.2s ease-in-out;
-
+      .white_logo_show {
+        display: block;
+      }
+      .white_logo_hidden {
+        display: none;
+      }
+      .black_logo_hidden {
+        display: none;
+      }
+      .black_logo_show {
+        display: block;
+      }
       &:hover {
         opacity: 0.6;
       }
@@ -476,6 +493,9 @@
           }
         }
       }
+      .color_black_scroll {
+        color: black;
+      }
     }
   }
 
@@ -485,7 +505,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    button {
+    .button_white {
       transition: 0.2s ease-in-out;
       background-color: white;
       color: black;
@@ -499,6 +519,10 @@
       &:hover {
         background-color: #d90a2c;
       }
+    }
+    .button_scroll {
+      background-color: black;
+      color: white;
     }
   }
 
@@ -684,11 +708,4 @@
   transition: 0.3s ease-in-out;
   opacity: 1;
   visibility: visible;
-  .menu_button {
-    .bars_container {
-      span {
-        background-color: black;
-      }
-    }
-  }
 }

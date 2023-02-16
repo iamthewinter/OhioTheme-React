@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from "../../../assets/YbUt6che-OhioLogo.svg";
 import LogoWhite from "../../../assets/Lb11lpeY-OhioLogoInverse.svg";
 import NavStyle from "../Nav/Nav.module.scss";
 import { Icon } from "@iconify/react";
@@ -32,24 +33,65 @@ const Nav = () => {
                 data-bs-target="#exampleModal"
               >
                 <div className={NavStyle.bars_container}>
-                  <span className={NavStyle.bar1}></span>
-                  <span className={NavStyle.bar2}></span>
+                  <span
+                    className={
+                      color
+                        ? `${NavStyle.bar1} ${NavStyle.bar1_black}`
+                        : `${NavStyle.bar1}`
+                    }
+                  ></span>
+                  <span
+                    className={
+                      color
+                        ? `${NavStyle.bar2} ${NavStyle.bar2_black}`
+                        : `${NavStyle.bar2}`
+                    }
+                  ></span>
                 </div>
               </div>
               <div className={NavStyle.logo}>
-                <img src={LogoWhite} alt="" />
+                <img
+                  className={
+                    color
+                      ? `${NavStyle.white_logo_show} ${NavStyle.white_logo_hidden}`
+                      : `${NavStyle.white_logo_show}`
+                  }
+                  src={LogoWhite}
+                  alt=""
+                />
+                <img
+                  className={
+                    color
+                      ? `${NavStyle.black_logo_hidden} ${NavStyle.black_logo_show}`
+                      : `${NavStyle.black_logo_hidden}`
+                  }
+                  src={Logo}
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <div className={`col-xl-6 col-lg-6 ${NavStyle.mid_nav_none}`}>
             <div className={NavStyle.mid_nav}>
               <ul className={NavStyle.lvl1_ul}>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <span>Home</span>
                   </div>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <span>Elements</span>
                   </div>
@@ -227,7 +269,13 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <span>Portfolio</span>
                   </div>
@@ -435,7 +483,13 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <span>Blog</span>
                   </div>
@@ -617,7 +671,13 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <span>Shop</span>
                   </div>
@@ -782,7 +842,13 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <span>Pages</span>
                   </div>
@@ -833,7 +899,13 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <span>Help</span>
                   </div>
@@ -854,7 +926,15 @@ const Nav = () => {
           </div>
           <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
             <div className={NavStyle.right_nav}>
-              <button>Let's talk</button>
+              <button
+                className={
+                  color
+                    ? `${NavStyle.button_white} ${NavStyle.button_scroll}`
+                    : `${NavStyle.button_white}`
+                }
+              >
+                Let's talk
+              </button>
             </div>
           </div>
         </div>
