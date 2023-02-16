@@ -1,3 +1,9 @@
 .map_iframe {
   padding-top: 25px;
+  .gmap_canvas {
+    height: 397px;
+    iframe {
+      height: 100%;
+    }
+  }
 }
