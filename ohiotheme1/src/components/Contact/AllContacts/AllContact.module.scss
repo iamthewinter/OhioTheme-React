@@ -1,0 +1,197 @@
+.allcontacts_section {
+  padding: 35px 0;
+
+  ul {
+    margin: 0 0 40px 0;
+    padding: 0;
+    display: flex;
+
+    li {
+      span {
+        font-size: 14.8px;
+
+        b {
+          font-weight: 600;
+        }
+      }
+
+      svg {
+        margin: 0 3px;
+        font-size: 14px;
+      }
+
+      .with_hover {
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 100% 0.2em;
+        background-position: 0px 110%;
+
+        &:hover {
+          color: #d90a2c;
+          animation: 0.4s cubic-bezier(0.58, 0.3, 0.005, 1) 0s 1 normal none
+            running links;
+          background-image: linear-gradient(
+            currentColor 0px,
+            currentColor 100%
+          );
+          transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+        }
+      }
+    }
+  }
+
+  .col6_holder {
+    h3 {
+      font-size: 28px;
+      font-family: "DM Sans", sans-serif;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      color: #111013;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  h3 {
+    font-size: 28px;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    color: #111013;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16.4px;
+  }
+
+  .social_list {
+    display: block;
+    margin: 0;
+
+    li {
+      span {
+        font-weight: 700;
+        font-size: 16.4px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 100% 0.2em;
+        background-position: 0px 110%;
+        line-height: 1.6;
+
+        &:hover {
+          color: #d90a2c;
+          animation: 0.4s cubic-bezier(0.58, 0.3, 0.005, 1) 0s 1 normal none
+            running links;
+          background-image: linear-gradient(
+            currentColor 0px,
+            currentColor 100%
+          );
+          transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+        }
+      }
+    }
+  }
+
+  hr {
+    opacity: 1;
+    border-color: rgba(99, 93, 111, 0.65);
+  }
+
+  form {
+    margin-top: 40px;
+
+    @media (max-width: 1200px) {
+      margin-top: 20px;
+    }
+
+    .input_label_holder {
+      padding: 10px;
+
+      input {
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 0 1rem;
+        border-radius: 0.35rem;
+        border: none;
+        text-align: inherit;
+        min-height: 3rem;
+        background-color: rgba(150, 144, 162, 0.08);
+        font-size: 1.025rem;
+      }
+
+      label {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+
+      span {
+        select {
+          width: 100%;
+          margin-top: 0.5rem;
+          padding: 0 36px 0 16px;
+          border-radius: 0.35rem;
+          border: none;
+          text-align: inherit;
+          min-height: 3rem;
+          background-color: rgba(150, 144, 162, 0.08);
+          font-size: 1.025rem;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        padding: 12px 16px;
+        border: none;
+        width: 100%;
+        height: 10rem;
+        min-height: 3rem;
+        margin-top: 0.5rem;
+        background-color: rgba(150, 144, 162, 0.08);
+        font-size: 1.025rem;
+        border-radius: 0.35rem;
+      }
+      button {
+        font-family: "DM Sans", sans-serif;
+        background-color: #111013;
+        font-size: 0.95em;
+        min-height: 3rem;
+        border: 2px solid transparent;
+        padding: 0 1.15rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+        display: inline-flex;
+        vertical-align: middle;
+        align-items: center;
+        border-radius: 0.35rem;
+        color: white;
+        transition: 0.3s ease-in-out;
+        margin-top: 10px;
+        &:hover {
+          background-color: #d90a2c;
+        }
+      }
+    }
+    .input_checkbox_holder {
+      padding: 0 10px;
+      input[type="checkbox"] {
+        border-radius: 0.35rem;
+        width: 1rem;
+        height: 1rem;
+        margin: 0;
+        outline: none;
+        display: inline-flex;
+        vertical-align: middle;
+        align-items: center;
+      }
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}

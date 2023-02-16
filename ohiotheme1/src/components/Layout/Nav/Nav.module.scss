@@ -684,5 +684,11 @@
   transition: 0.3s ease-in-out;
   opacity: 1;
   visibility: visible;
-  // transform: translate3d(10%,10%,10%);
+  .menu_button {
+    .bars_container {
+      span {
+        background-color: black;
+      }
+    }
+  }
 }
