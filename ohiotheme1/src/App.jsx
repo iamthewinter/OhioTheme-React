@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
 import Home from "./components/Home/Home";
 import AppStyle from "../src/App.module.scss";
@@ -58,7 +59,12 @@ function App() {
 
   return (
     <main className={AppStyle.main_scss}>
-      <Home />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="users/*" element={<Users />} /> */}
+        </Routes>
+      </BrowserRouter>
       <motion.div
         className={AppStyle.cursor}
         variants={variants}
