@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
-import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
+import Blog from "./components/Blog/Blog";
+import Portfolio from "./components/Portfolio/Portfolio";
 import AppStyle from "../src/App.module.scss";
 import { Icon } from "@iconify/react";
 
@@ -64,6 +65,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </BrowserRouter>
       <motion.div
