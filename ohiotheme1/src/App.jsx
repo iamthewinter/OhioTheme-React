@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
+import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
 import AppStyle from "../src/App.module.scss";
 import { Icon } from "@iconify/react";
@@ -62,7 +63,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="users/*" element={<Users />} /> */}
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>
       <motion.div
