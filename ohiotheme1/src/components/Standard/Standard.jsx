@@ -1,5 +1,6 @@
 import React from "react";
 import ContentChange from "./ContentChange/ContentChange";
+import RelatedProd from "./RelatedProducts/RelatedProd";
 import Stool from "./Stool/Stool";
 
 const Standard = () => {
@@ -7,6 +8,7 @@ const Standard = () => {
     <>
       <Stool />
       <ContentChange />
+      <RelatedProd />
     </>
   );
 };

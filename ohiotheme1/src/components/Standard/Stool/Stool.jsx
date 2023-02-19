@@ -1,7 +1,7 @@
 import React from "react";
 import StoolStyle from "../Stool/Stool.module.scss";
 import { Icon } from "@iconify/react";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
 const Stool = () => {
   return (
     <section className={StoolStyle.stool_section}>
@@ -30,7 +30,7 @@ const Stool = () => {
             <div className="row">
               <div className="col-xl-6">
                 <div className={StoolStyle.image_container}>
-                  <ReactImageMagnify
+                  {/* <ReactImageMagnify
                     {...{
                       smallImage: {
                         alt: "Wristwatch by Ted Baker London",
@@ -41,11 +41,13 @@ const Stool = () => {
                         src: "https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio.clbthemes.com/kfnQjzZB-ProductImage__018.jpg",
                         width: 1200,
                         height: 1800,
-                        left: 0,
                       },
                     }}
+                  /> */}
+                  <img
+                    src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio.clbthemes.com/kfnQjzZB-ProductImage__018.jpg"
+                    alt=""
                   />
-                  {/* <img src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio.clbthemes.com/kfnQjzZB-ProductImage__018.jpg" alt="" /> */}
                 </div>
               </div>
               <div className="col-xl-6">

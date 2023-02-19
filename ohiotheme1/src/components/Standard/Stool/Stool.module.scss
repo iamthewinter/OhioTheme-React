@@ -88,8 +88,14 @@
 
   .image_container {
     margin-bottom: 20px;
-
+    overflow: hidden;
+    &:hover {
+      img {
+        transform: scale3d(1.1, 1.1, 1.1);
+      }
+    }
     img {
+      transition: 0.3s ease-in-out;
       width: 100%;
     }
   }

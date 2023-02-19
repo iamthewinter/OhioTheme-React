@@ -1,0 +1,207 @@
+.relatedprod_section {
+  padding: 4rem 0 8rem 0;
+
+  .section_heading {
+    margin-bottom: 20px;
+
+    h3 {
+      margin: 0;
+      font-family: "DM Sans", sans-serif;
+      font-size: 25px;
+      letter-spacing: -0.025em;
+      line-height: 1.25;
+      color: #111013;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  .cards {
+    margin-bottom: 30px;
+    &:hover {
+      .image_holder {
+        .banner {
+          transform: translateY(6%);
+          opacity: 0;
+        }
+
+        .crop_btn {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+
+        .button_container {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+
+      img {
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+    }
+
+    .image_holder {
+      border-radius: 0.35rem;
+      overflow: hidden;
+      position: relative;
+      cursor: grab;
+      transform: perspective(1500px) rotateY(0deg);
+      transition: transform 1s ease 0s;
+
+      &:hover {
+        transform: perspective(3000px) rotateY(15deg) scale3d(1, 1, 1);
+      }
+
+      img {
+        width: 100%;
+        transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+      }
+
+      .banner {
+        position: absolute;
+        z-index: 2;
+        transform: none;
+        opacity: 1;
+        transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+        left: 2vh;
+        top: 2vh;
+        font-weight: 500;
+        padding: 0.35rem 0.55rem;
+        line-height: 1;
+        font-size: 0.9rem;
+        background: rgba(150, 144, 162, 0.15);
+        display: inline-flex;
+        align-items: center;
+        border-radius: 0.35rem;
+      }
+      .banner_sale {
+        background-color: #d90a2c;
+        color: white;
+      }
+
+      .crop_btn {
+        transform: none;
+        opacity: 0;
+        position: absolute;
+        z-index: 2;
+        left: 4vh;
+        top: 4vh;
+        min-width: 3.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        transform: translateY(-6%);
+        cursor: pointer;
+        transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+
+        svg {
+          font-size: 1.4em;
+        }
+      }
+
+      .button_container {
+        display: flex;
+        gap: 20px;
+        padding: 1.5rem;
+        width: 100%;
+        bottom: 0;
+        padding-bottom: 3vh;
+        position: absolute;
+        z-index: 2;
+        transform: translateY(6%);
+        opacity: 0;
+        transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+
+        .hover_btn {
+          width: 100%;
+          padding: 0 0.75rem;
+          font-size: 0.95em;
+          min-height: 2.125rem;
+          font-family: "DM Sans", sans-serif;
+          font-weight: bold;
+          cursor: pointer;
+          line-height: 1.5rem;
+          letter-spacing: -0.01em;
+          white-space: nowrap;
+          display: inline-flex;
+          vertical-align: middle;
+          border: 2px solid #111013;
+          align-items: center;
+          justify-content: center;
+          transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+          border-radius: 0.35rem;
+        }
+
+        .btn_absolute1 {
+          background-color: #111013;
+          color: white;
+
+          &:hover {
+            border-color: #d90a2c;
+            background-color: #d90a2c;
+          }
+        }
+
+        .btn_absolute2 {
+          background-color: transparent;
+          color: #111013;
+
+          &:hover {
+            border-color: #d90a2c;
+            color: #d90a2c;
+          }
+        }
+      }
+    }
+
+    .card_text {
+      margin-top: 25px;
+
+      h5 {
+        margin-bottom: 0.2rem;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.25rem;
+        letter-spacing: -0.025em;
+        line-height: 1.25;
+        color: #111013;
+        font-weight: bold;
+        margin: 0;
+        cursor: pointer;
+      }
+
+      .categoriies {
+        span {
+          color: inherit;
+          margin-bottom: 0.2rem;
+          font-size: 0.9rem;
+          line-height: 1.35;
+          cursor: pointer;
+          background-repeat: no-repeat;
+          background-size: 100% 0.2em;
+          background-position: 0px 110%;
+          transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+
+          &:hover {
+            color: #d90a2c;
+            animation: 0.4s cubic-bezier(0.58, 0.3, 0.005, 1) 0s 1 normal none
+              running links;
+            background-image: -o-linear-gradient(
+              currentColor 0px,
+              currentColor 100%
+            );
+            background-image: linear-gradient(
+              currentColor 0px,
+              currentColor 100%
+            );
+            transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+          }
+        }
+      }
+
+      bdi {
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
