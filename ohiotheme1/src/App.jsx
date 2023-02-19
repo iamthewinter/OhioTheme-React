@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Home from "./components/Home/Home";
 import Blog from "./components/Blog/Blog";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Standard from "./components/Standard/Standard";
 import AppStyle from "../src/App.module.scss";
 import { Icon } from "@iconify/react";
 
@@ -66,6 +67,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/standard" element={<Standard />} />
         </Routes>
       </BrowserRouter>
       <motion.div
