@@ -26,7 +26,7 @@ const Stool = () => {
               </li>
             </ul>
           </div>
-          <div className="col-xl-8 position-relative">
+          <div className="col-xl-8 col-lg-8 position-relative">
             <div className="row">
               <div className="col-xl-6">
                 <div className={StoolStyle.image_container}>
@@ -88,7 +88,7 @@ const Stool = () => {
               <Icon icon="material-symbols:crop-free" />
             </div>
           </div>
-          <div className={`col-xl-4 ${StoolStyle.sticky_col}`}>
+          <div className={`col-xl-4 col-lg-4 ${StoolStyle.sticky_col}`}>
             <div className={StoolStyle.col4_holder}>
               <small>In stock</small>
               <h3>Modern Upholstery Stool</h3>
