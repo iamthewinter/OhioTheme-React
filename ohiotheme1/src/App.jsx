@@ -6,8 +6,11 @@ import Blog from "./components/Blog/Blog";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Standard from "./components/Standard/Standard";
 import AppStyle from "../src/App.module.scss";
+import "../src/App.scss";
 import { Icon } from "@iconify/react";
-
+import route from "../src/router";
+import Layout from "./components/Layout/Layout";
+import DarkMode from "./components/DarkMode/DarkMode";
 function App() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -63,12 +66,19 @@ function App() {
   return (
     <main className={AppStyle.main_scss}>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
+        <Layout>
+          <Routes>
+            {route.map((route) => (
+              <React.Fragment key={route.path}>
+                <Route path={`${route.path}`} element={route.component} />
+              </React.Fragment>
+            ))}
+            {/* <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/standard" element={<Standard />} />
-        </Routes>
+          <Route path="/standard" element={<Standard />} /> */}
+          </Routes>
+        </Layout>
       </BrowserRouter>
       <motion.div
         className={AppStyle.cursor}
@@ -127,6 +137,7 @@ function App() {
               </div>
             </div>
           </div>
+          <DarkMode />
         </li>
       </ul>
       <ul className={AppStyle.fixed_right_tools}>

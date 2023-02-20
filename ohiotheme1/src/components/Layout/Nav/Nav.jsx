@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Logo from "../../../assets/YbUt6che-OhioLogo.svg";
 import NavStyle from "../Nav/Nav.module.scss";
 import { Icon } from "@iconify/react";
+import router from "../../../router";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [color, setColor] = useState(false);
@@ -37,7 +39,9 @@ const Nav = () => {
                 </div>
               </div>
               <div className={NavStyle.logo}>
-                <img src={Logo} alt="" />
+                <Link to="/">
+                  <img src={Logo} alt="" />
+                </Link>
               </div>
             </div>
           </div>
@@ -47,7 +51,9 @@ const Nav = () => {
                 <li className={NavStyle.lvl1_li}>
                   <div className={NavStyle.li_container}>
                     <small>01</small>
-                    <span>Home</span>
+                    <span>
+                      <Link to="/">Home</Link>
+                    </span>
                   </div>
                 </li>
                 <li className={NavStyle.lvl1_li}>
@@ -239,7 +245,9 @@ const Nav = () => {
                       <h6>ARCHIVE</h6>
                       <ul className={NavStyle.lvl3_ul}>
                         <li className={NavStyle.lvl3_li}>
-                          <span>Classic</span>
+                          <span>
+                            <Link to="/portfolio">Classic</Link>
+                          </span>
                         </li>
                         <li className={NavStyle.lvl3_li}>
                           <span>Classic Contained</span>
@@ -448,7 +456,9 @@ const Nav = () => {
                       <h6>ARCHIVE</h6>
                       <ul className={NavStyle.lvl3_ul}>
                         <li className={NavStyle.lvl3_li}>
-                          <span>Classic</span>
+                          <span>
+                            <Link to="/blog">Classic</Link>
+                          </span>
                         </li>
                         <li className={NavStyle.lvl3_li}>
                           <span>Classic Contained</span>
@@ -729,7 +739,9 @@ const Nav = () => {
                       <h6>PRODUCT TYPES</h6>
                       <ul className={NavStyle.lvl3_ul}>
                         <li className={NavStyle.lvl3_li}>
-                          <span>Standard Product</span>
+                          <span>
+                            <Link to="standard">Standard Product</Link>
+                          </span>
                         </li>
                         <li className={NavStyle.lvl3_li}>
                           <span>Grouped Product</span>

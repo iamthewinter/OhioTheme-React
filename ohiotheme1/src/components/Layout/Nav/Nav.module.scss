@@ -112,6 +112,10 @@
           span {
             font-weight: 500;
             font-size: 16.4px;
+            a {
+              text-decoration: none;
+              color: inherit;
+            }
           }
         }
 
@@ -208,6 +212,13 @@
                 &:hover {
                   color: #d90a2c;
                   background-color: rgba(150, 144, 162, 0.06);
+                }
+
+                span {
+                  a {
+                    text-decoration: none;
+                    color: inherit;
+                  }
                 }
 
                 small {

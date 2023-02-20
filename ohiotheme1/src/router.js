@@ -1,4 +1,7 @@
+import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Standard from "./components/Standard/Standard";
 
 const router = [
   {
@@ -9,13 +12,13 @@ const router = [
     component: <Home />,
     fallback: <Home />,
   },
-  {
-    id: Math.random(),
-    name: "Contact",
-    path: "/contact",
-    exact: true,
-    component: <Contact />,
-  },
+  //   {
+  //     id: Math.random(),
+  //     name: "Contact",
+  //     path: "/contact",
+  //     exact: true,
+  //     component: <Contact />,
+  //   },
   {
     id: Math.random(),
     name: "Blog",
