@@ -106,39 +106,7 @@ function App() {
             <div className={AppStyle.scrolltotop_title}>Scroll to top</div>
           </a>
         </li>
-        <li>
-          <div className={AppStyle.mode_switcher}>
-            <div className={AppStyle.dark_mode}>
-              <div className={AppStyle.switcher_item}>
-                <span className={AppStyle.caption}>Dark</span>
-                <Icon icon="icon-park-outline:moon" rotate={1} />
-              </div>
-            </div>
-            <div className={AppStyle.light_mode}>
-              <div className={AppStyle.switcher_item}>
-                <span className={AppStyle.caption}>Light</span>
-                <Icon icon="ph:sun-bold" />
-              </div>
-            </div>
-            <div className={AppStyle.switcher_toddler}>
-              <div className={AppStyle.toddler_wrap}>
-                <div className={`${AppStyle.toddler_item} ${AppStyle.dark}`}>
-                  <div className={AppStyle.item_state}>
-                    <span className={AppStyle.caption}>Dark</span>
-                    <Icon icon="ph:sun-bold" />
-                  </div>
-                </div>
-                <div className={`${AppStyle.toddler_item} ${AppStyle.light}`}>
-                  <div className={AppStyle.item_state}>
-                    <span className={AppStyle.caption}>Light</span>
-                    <Icon icon="ph:sun-bold" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <DarkMode />
-        </li>
+        <DarkMode />
       </ul>
       <ul className={AppStyle.fixed_right_tools}>
         <li>

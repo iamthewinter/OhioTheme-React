@@ -14,7 +14,7 @@
 .main_scss {
   .fixed_left_tools {
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 0;
     padding: 20px;
     z-index: 4;
@@ -86,129 +86,8 @@
         opacity: 1;
         visibility: visible;
       }
-
-      .mode_switcher {
-        min-width: 6.5rem;
-        font-weight: 500;
-        font-size: 0.85em;
-        position: relative;
-        height: 1.7rem;
-        background-color: rgba(150, 144, 162, 0.25);
-        cursor: pointer;
-        box-shadow: 0 0 0 2px #9690a226 inset;
-        border-radius: 0.85rem;
-        display: flex;
-        justify-content: center;
-
-        .dark_mode {
-          min-width: auto;
-          width: 100%;
-          height: 100%;
-          padding: 0 0.45rem 0 0.45rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          .switcher_item {
-            margin: 0;
-            height: 1.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .caption {
-              line-height: 1;
-            }
-
-            svg {
-              display: none;
-              // fill: #161519;
-              font-size: 16px;
-              margin-left: 0.2rem;
-              margin-right: -0.2rem;
-              fill: #fff;
-            }
-          }
-        }
-
-        .light_mode {
-          min-width: 64.4px;
-          width: 100%;
-          height: 100%;
-          padding: 0 0.45rem 0 0.45rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          .switcher_item {
-            margin: 0;
-            height: 1.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .caption {
-              line-height: 1;
-            }
-
-            svg {
-              font-size: 18px;
-              margin-left: 0.2rem;
-              margin-right: -0.2rem;
-            }
-          }
-        }
-
-        .switcher_toddler {
-          position: absolute;
-          top: 0;
-          right: 0;
-          height: 1.7rem;
-          width: 64.4px;
-          transform: translateX(0px);
-          transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
-          transition-property: transform, -webkit-transform;
-
-          .toddler_wrap {
-            position: relative;
-            height: 100%;
-
-            .toddler_item {
-              position: absolute;
-              background-color: #fff;
-              width: 100%;
-              box-shadow: -3px 0 6px #1110130d;
-              color: initial;
-              border-radius: 0.85rem;
-              height: 100%;
-              padding: 0 0.45rem 0 0.45rem;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              .item_state {
-                margin: 0;
-                height: 1.5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .caption {
-                  line-height: 1;
-                }
-
-                svg {
-                  margin-left: 0.2rem;
-                  margin-right: -0.2rem;
-                }
-              }
-            }
-          }
-        }
-      }
     }
   }
-
   .fixed_right_tools {
     z-index: 3;
     transform-origin: right top;
