@@ -1,0 +1,49 @@
+.email_section {
+  padding: 100px 0 65px 0;
+  background-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/stage.clbthemes.com/oh__img93.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+
+  .col_adaptation {
+    padding: 50px 0 0 0;
+
+    h1 {
+      color: white;
+      letter-spacing: -0.045em;
+      line-height: 1;
+      font-weight: bold;
+      margin: 0;
+      font-family: "DM Sans", sans-serif;
+      font-size: 4.5rem;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.1em;
+      max-width: 60%;
+      margin-top: 1.25rem;
+    }
+
+    button {
+      background-color: #d90a2c;
+      color: white;
+      padding: 0 0.75rem;
+      margin-top: 0.25rem;
+      font-family: "DM Sans", sans-serif;
+      font-size: 15.5px;
+      min-height: 2.125rem;
+      border-radius: 0.35rem;
+      font-weight: bold;
+      cursor: pointer;
+      line-height: 1.5rem;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      border: 2px solid transparent;
+      transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+      &:hover {
+        background-color: #161519;
+      }
+    }
+  }
+}

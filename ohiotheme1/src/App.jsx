@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
-import Home from "./components/Home/Home";
-import Blog from "./components/Blog/Blog";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Standard from "./components/Standard/Standard";
 import AppStyle from "../src/App.module.scss";
 import "../src/App.scss";
 import { Icon } from "@iconify/react";
 import route from "../src/router";
 import Layout from "./components/Layout/Layout";
 import DarkMode from "./components/DarkMode/DarkMode";
+
 function App() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,

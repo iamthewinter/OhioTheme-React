@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Logo from "../../../assets/YbUt6che-OhioLogo.svg";
+// import LogoWhite from "../../../assets/Lb11lpeY-OhioLogoInverse.svg";
 import NavStyle from "../Nav/Nav.module.scss";
 import { Icon } from "@iconify/react";
-import router from "../../../router";
+// import router from "../../../router";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
@@ -34,8 +35,20 @@ const Nav = () => {
                 data-bs-target="#exampleModal"
               >
                 <div className={NavStyle.bars_container}>
-                  <span className={NavStyle.bar1}></span>
-                  <span className={NavStyle.bar2}></span>
+                  <span
+                    className={
+                      color
+                        ? `${NavStyle.bar1} ${NavStyle.bar1_black}`
+                        : `${NavStyle.bar1}`
+                    }
+                  ></span>
+                  <span
+                    className={
+                      color
+                        ? `${NavStyle.bar2} ${NavStyle.bar2_black}`
+                        : `${NavStyle.bar2}`
+                    }
+                  ></span>
                 </div>
               </div>
               <div className={NavStyle.logo}>
@@ -48,7 +61,13 @@ const Nav = () => {
           <div className={`col-xl-6 col-lg-6 ${NavStyle.mid_nav_none}`}>
             <div className={NavStyle.mid_nav}>
               <ul className={NavStyle.lvl1_ul}>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <small>01</small>
                     <span>
@@ -56,7 +75,13 @@ const Nav = () => {
                     </span>
                   </div>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <small>02</small>
                     <span>Elements</span>
@@ -235,7 +260,13 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <small>03</small>
                     <span>Portfolio</span>
@@ -446,7 +477,13 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <small>04</small>
                     <span>Blog</span>
@@ -631,7 +668,13 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <small>05</small>
                     <span>Shop</span>
@@ -740,7 +783,7 @@ const Nav = () => {
                       <ul className={NavStyle.lvl3_ul}>
                         <li className={NavStyle.lvl3_li}>
                           <span>
-                            <Link to="standard">Standard Product</Link>
+                            <Link to="/standard">Standard Product</Link>
                           </span>
                         </li>
                         <li className={NavStyle.lvl3_li}>
@@ -799,7 +842,13 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <small>06</small>
                     <span>Pages</span>
@@ -827,7 +876,9 @@ const Nav = () => {
                         <Icon icon="ic:baseline-plus" />
                       </div>
                       <ul className={NavStyle.onelists_popup}>
-                        <li>Contact: Agency</li>
+                        <li>
+                          <Link to="/contact">Contact: Agency</Link>
+                        </li>
                         <li>Contact: Blocks</li>
                         <li>Contact: Classic</li>
                         <li>Contact: Corporate</li>
@@ -851,7 +902,13 @@ const Nav = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={NavStyle.lvl1_li}>
+                <li
+                  className={
+                    color
+                      ? `${NavStyle.lvl1_li} ${NavStyle.color_black_scroll}`
+                      : `${NavStyle.lvl1_li}`
+                  }
+                >
                   <div className={NavStyle.li_container}>
                     <small>07</small>
                     <span>Help</span>
@@ -873,7 +930,15 @@ const Nav = () => {
           </div>
           <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
             <div className={NavStyle.right_nav}>
-              <button>Let's talk</button>
+              <button
+                className={
+                  color
+                    ? `${NavStyle.button_white} ${NavStyle.button_scroll}`
+                    : `${NavStyle.button_white}`
+                }
+              >
+                Let's talk
+              </button>
             </div>
           </div>
         </div>
