@@ -974,7 +974,9 @@ const Nav = () => {
                       <span>About</span>
                     </li>
                     <li className={NavStyle.li_hidden}>
-                      <span>Contact</span>
+                      <span>
+                        <Link to="/contact">Contact</Link>
+                      </span>
                     </li>
                     <li className={NavStyle.li_hidden}>
                       <span>404 Page</span>
@@ -1003,7 +1005,9 @@ const Nav = () => {
                       <span>Slider</span>
                     </li>
                     <li className={NavStyle.li_hidden}>
-                      <span>Single Project</span>
+                      <span>
+                        <Link to="/portfolio">Classic</Link>
+                      </span>
                     </li>
                   </ul>
                 </li>
@@ -1017,7 +1021,9 @@ const Nav = () => {
                   </div>
                   <ul className={NavStyle.ul_absolute}>
                     <li className={NavStyle.li_hidden}>
-                      <span>Grid View</span>
+                      <span>
+                        <Link to="/blog">Classic</Link>
+                      </span>
                     </li>
                     <li className={NavStyle.li_hidden}>
                       <span>Single Post</span>
@@ -1037,7 +1043,9 @@ const Nav = () => {
                       <span>Grid View</span>
                     </li>
                     <li className={NavStyle.li_hidden}>
-                      <span>Single Product</span>
+                      <span>
+                        <Link to="/standard">Standard</Link>
+                      </span>
                     </li>
                   </ul>
                 </li>
@@ -1049,8 +1057,8 @@ const Nav = () => {
                 </li>
               </ul>
             </div>
-            <div className="container-fluid mt-5 pt-5">
-              <div className="row px-4">
+            <div className={`container-fluid ${NavStyle.mpt_5}`}>
+              <div className={`row ${NavStyle.px_4}`}>
                 <div className="col-xl-3 col-lg-4 col-md-4 col-sm-6 px-3">
                   <div className={NavStyle.nav_foot}>
                     <h5>Get In Touch</h5>
